@@ -2,7 +2,7 @@ I don't quite work right. Fix me up!
 
 * I need a "Select All" checkbox to toggle all the checkboxes.
 * If only some are selected, then the Select All should have that little dash symbol, what's it called?
-* If "Language" is the only thing selected, then we need an error that says "Language cannot be selected alone."
+* When submitting the form, if "Language" is the only thing selected, then we need an error that says "Language cannot be selected alone."
 * Submitting successfully will take the user to results.html
 
 extra credit:
