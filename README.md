@@ -6,15 +6,17 @@ I don't quite work right. Fix me up!
 * Submitting successfully will take the user to results.html
 
 extra credit:
-* Create a NodeJS server with a reverse proxy and an app server that serves up the checkboxes in JSON format.
 * Sort the checkboxes by name.
 * Make another column that lists the selected checkboxes.
 * Report the selected checkboxes on the results page.
-* Make the pages look nice (how is your choice).
 * Use LESS/SASS, etc
 * Deploy the project with Grunt to a .tgz
 * Serve/Deploy with Yeoman.
 * Write as a SPA with AngularJS
+* Create a NodeJS server with a reverse proxy and an app server that serves up the checkboxes in JSON format.
+* Serve with NodeJS or PHP or LAMP or ?
+* Improve the Docs.
+* Tell us how to improve the test or specific parts of the test.
 * WOW us with your 1337 skilz.
 
 Completing:
