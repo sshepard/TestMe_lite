@@ -9,6 +9,7 @@
 </div>
 
 <form role="form">
+  <div class="alert alert-danger" ng-show="showError">Please choose more items!</div>
   
   <div class="form-group">
     <label class="checkbox" ng-click="bulkSelect()">
@@ -17,12 +18,10 @@
   </div>
   
   <div class="form-group">
-
     <label class="checkbox" ng-repeat="checkbox in checkboxes">
       <input type="checkbox" name="fields" value="{{checkbox}}" ng-model="selected[checkbox]" ng-change="updateSelectAll()">{{checkbox}}
     </label>
-
   </div>
   
-  <button ng-click="submit()" class="btn btn-default">Submit</button>
+  <button ng-click="submit()" class="btn btn-primary">Submit</button>
 </form>

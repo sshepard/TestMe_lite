@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="uitest">
+<html xmlns:ng="http://angularjs.org" id="ng-app" ng-app="uitest">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 	<title ng-bind="title"></title>
+	
 	<link rel="stylesheet" href="css/bootstrap.css"/>
 	<style>
 		h1 { 
@@ -12,19 +14,10 @@
 		}
 	</style>
 
-	<!--[if IE 7]>
-	<script>
-		// Attach additional stylesheets and JS for ie.
-		document.createStyleSheet('/css/ie7.css');
-
-		var json3 = document.createElement('script');
-		json3.type = 'text/javascript';
-		json3.href = '/vendor/json3.js';
-		json3.appendChild(document.getElementsByTagName('head')[0]);
-	</script>
+	<!--[if lte IE 7]>
+		<script src="js/vendor/json3.js"></script>
 	<![endif]-->
 
-	<script src="js/vendor/jquery.min.js"></script>
 	<script src="js/vendor/angular.min.js"></script>
 	<script src="js/vendor/angular-route.min.js"></script>
 	

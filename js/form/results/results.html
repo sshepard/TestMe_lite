@@ -2,6 +2,6 @@
 <div class="well">
   <p>This is what you selected:</p>
   <ul>
-    <li ng-repeat="(key, value) in selected">{{key}}</li>
+    <li ng-repeat="(key, value) in selected" ng-if="value">{{key}}</li>
   </ul>
 </div>

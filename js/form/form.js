@@ -14,22 +14,26 @@ angular.module('uitest.form', ['ngRoute', 'uitest.form.results', 'uitest.form.se
     $scope.selected = FormService.selected;
     $scope.selectAll = false;
     
-    // Get checkboxes
     // TODO: handle network failure
     FormService.getCheckboxes().then(function(checkboxes) {
       $scope.checkboxes = checkboxes;
+      $scope.updateSelectAll();
     });
 
     $scope.submit = function() {
-      FormService.selected = $scope.selected;
-      $location.path('/form/results');
+      if (numChecked() === 1 && $scope.selected['Language']) {
+        $scope.showError = true;
+      } else {
+        FormService.selected = $scope.selected;
+        $location.path('/form/results');
+      }
     };
 
     $scope.updateSelectAll = function() {
-      var numChecked = $('input[name=fields]:checked').length;
-      $scope.selectAll = !!numChecked;
-      if (numChecked && numChecked < $scope.checkboxes.length) {
-        $("#select-all").prop('indeterminate', true);
+      var num = numChecked();
+      $scope.selectAll = !!num;
+      if (num && num < $scope.checkboxes.length) {
+        document.getElementById("select-all").indeterminate = true;
       }
     };
 
@@ -38,5 +42,15 @@ angular.module('uitest.form', ['ngRoute', 'uitest.form.results', 'uitest.form.se
         $scope.selected[checkbox] = $scope.selectAll;
       });
     };
+
+    function numChecked() {
+      var num = 0;
+      for (var key in $scope.selected) {
+        if ($scope.selected.hasOwnProperty(key) && $scope.selected[key]) {
+          num++;
+        }
+      }
+      return num;
+    }
 
   }]);
