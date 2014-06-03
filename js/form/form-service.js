@@ -7,7 +7,7 @@ angular.module('uitest.form.service', [])
         url: '/data/checkboxes.json'
       })
       .then(function(response) {
-        return response.data.checkboxes;
+        return response.data.checkboxes.sort();
       });
     };
 
