@@ -1,9 +1,7 @@
 I don't quite work right. Fix me up!
 
-* I need a "Select All" checkbox to toggle all the checkboxes.
-* If only some are selected, then the Select All should have that little dash symbol, what's it called?
-* When submitting the form, if "Language" is the only thing selected, then we need an error that says "Language cannot be selected alone."
-* Submitting successfully will take the user to results.html
+* Look for instructions in index.html and results.html
+* Fork me or clone me from: https://github.com/sshepard/TestMe_lite
 
 extra credit:
 * Sort the checkboxes by name.
@@ -13,7 +11,7 @@ extra credit:
 * Deploy the project with Grunt to a .tgz
 * Serve/Deploy with Yeoman.
 * Write as a SPA with AngularJS
-* Create a NodeJS server with a reverse proxy and an app server that serves up the checkboxes in JSON format.
+* Create a NodeJS server with a reverse proxy and an app server that serves up the checkboxes in JSON format with data supplied by Solr.
 * Serve with NodeJS or PHP or LAMP or ?
 * Improve the Docs.
 * Tell us how to improve the test or specific parts of the test.
