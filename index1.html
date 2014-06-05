@@ -1,0 +1,46 @@
+<div class="container">
+		<div class="row">
+			<h1>The User Interface Developer Test</h1>
+		</div>
+		<div class="well">
+			<div class="well">
+				<ul>
+					<li>In this test you will add a select-all toggle for the checkbox list.</li>
+					<li>It should be checked if all fields are checked, unchecked if all fields are unchecked and indeterminate if some are checked.</li>
+					<li>When submitting the form, if only Language is checked, then an error should appear stating &quot; Please choose more items! &quot;</li>
+					<li>Successfully submitting the form takes us to results.html and shows what the user submitted.</li>
+					<li>Maybe the page can look a little better?</li>
+					<p>Read the README.md</p>
+				</ul>
+			</div>
+		</div>
+		<form role="form" id="form1" method = "post">
+			<div class="form-group">
+				<input type="checkbox" id="select_all">Select All
+			</div>
+			<div class="form-group" id="div2">
+				<label class="checkbox">
+					<input type="checkbox" name="fields" value="Abstract" ng-model="obj.abstract">Abstract
+				</label>
+				<label class="checkbox">
+					<input type="checkbox" name="fields" value="Publication" ng-model="obj.publication">Publication
+				</label>
+				<label class="checkbox">
+					<input type="checkbox" value="Inventor" ng-model="obj.inventor">Inventor
+				</label>
+				<label class="checkbox">
+					<input type="checkbox" name="fields" value="Language" id = "language" ng-model="obj.language">Language
+				</label>
+				<label class="checkbox">
+					<input type="checkbox" name="field" value="Source" ng-model="obj.source">Source
+				</label>
+				<label class="checkbox">
+					<input type="checkbox" name="fields" value="Priority" ng-model="obj.priority">Priority
+				</label>
+
+			</div>
+			
+			<button type="submit" class="btn btn-default" ng-click="goToRoute('results')">Submit</button>
+			</form>
+	</div>
+	<script type = "text/javascript" src = "js/checkBoxes.js"></script>
