@@ -19,7 +19,10 @@ extra credit:
 
 Completing:
 
-When you're done, send me a pull request! https://github.com/sshepard/TestMe_lite
+When you're done:
+ - cut a branch: git checkout -b yourName
+ - Push it: git push origin yourName
+ - Make a pull request in GitHub at https://github.com/sshepard/TestMe_lite
 
 If you can't because you are against pulls or are all out of forks, then you can hand-write your answers on a dead tree and
 shove them in an envelope (or email) to your technical contact, manager or recruiter person.
