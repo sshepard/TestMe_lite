@@ -3,8 +3,11 @@
     "version": "0.0.1",
     "description": "5()~()|<() version:)",
     "main": "server.js",
-    "command": "start",
     "author": "Sonoko Hirano",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/snkhrn/TestMe_lite"
+    },
     "license": "ISC",
     "devDependencies": {
         "express": "^4.4.1",
