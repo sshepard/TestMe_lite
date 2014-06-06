@@ -1,0 +1,17 @@
+h1 { color: darkred;
+	 weight: bolder;
+	 margin: 20px; display: block; opacity: 80%;
+	 &:hover { opacity:1; }
+	}
+
+#selectedList{
+	min-height: 300px;
+	background-color: #eee;
+	padding:10px;
+}
+#selectedList li{display: none;}
+
+label.selectLabel{
+	color: #666;
+	font-weight: normal;
+}

@@ -1,0 +1,16 @@
+{
+    "name": "TestMe_lite-remaster",
+    "version": "0.0.0",
+    "description": "I don't quite work right. Fix me up!",
+    "main": "server.js",
+    "command": "start",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "express": "^4.4.1",
+        "socket.io": "^1.0.4"
+    }
+}
