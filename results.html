@@ -39,6 +39,9 @@
 		<h4><span class="label label-default">Items you selected</span></h4>
 		<ul id="selectedList" class="list-unstyled"><!----></ul>
 	</div>
+	<form action="/">
+    <button type="submit" class="btn btn-default">Back</button>
+</form>
 </div>
 	<script>
 (function($, window, document, undefined) {
@@ -47,6 +50,7 @@
 var newList=$('#selectedList');
 var query=getUrlVars();
 
+//creates list of the user-selected items
 $.each(query, function(index, val) {
 	 newList.append(
 	 	$('<li>').append(val[1])
@@ -54,6 +58,8 @@ $.each(query, function(index, val) {
 });
 $('#result').append(newList);
 
+
+//gets url query and parses it into an array
 function getUrlVars()
 {
     var vars = [], hash;
