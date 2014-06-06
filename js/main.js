@@ -32,8 +32,6 @@
             }
         });
 
-
-
         // Updates the list of checked checkboxes
         $checkboxes.click(function(event) {
             var $clicked = $(event.target);
@@ -56,24 +54,24 @@
             }
         });
 
-        function errorMessage(str) {
-            $('#alertText').text(str);
-            $('#alertBar').fadeIn("slow");
-        }
-
+        //on form submission
         $('#cbForm').submit(function(event) {
             event.preventDefault();
             var array = $('#cbForm').serializeArray()
+            // console.log(array);
 
-            console.log(array);
+            //if no item is chosen
             if (array.length == 0) {
                 errorMessage("Please choose at least one item.");
                 return false;
             }
+
+            //if only "Language" is chosen
             if (array.length == 1 && array[0].value == "Language") {
                 errorMessage(" Please choose more items!");
                 return false;
             }
+
             var jData = JSON.stringify(array);
 
             $.ajax({
@@ -83,7 +81,7 @@
                 data: $('#cbForm').serialize(),
             })
                 .done(function(data) {
-                    console.log(data);
+                    //jumps to the result page
                     var query = decodeURIComponent($.param(data));
                     query = query.replace(/\[\]/g, "");
                     window.location.replace("/results?" + query);
@@ -97,6 +95,7 @@
 
         });
 
+        //adds an item from the selected list
         function addCheckedList(selected) {
             var selectedVal = selected.prop('value');
             var $newList = $('<li>').append(selectedVal).attr('id', selectedVal + "Selected").addClass('list-group-item');
@@ -114,12 +113,20 @@
             }
         }
 
+        //removes an item from the selected list
         function removeCheckedList(selected) {
             var selectedVal = selected.prop('value');
             $('#' + selectedVal + "Selected").fadeOut('fast', function() {
                 $(this).remove();
             });
         }
+
+        //Displays error message
+        function errorMessage(str) {
+            $('#alertText').text(str);
+            $('#alertBar').fadeIn("slow");
+        }
+
 
 
 
