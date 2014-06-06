@@ -1,3 +1,19 @@
+Please run
+
+	npm install
+
+to get node modules required for this project, and then
+
+	node server.js
+
+to run this project.
+It will start an express server on port 8124 and reads index.html.
+
+Thank you!
+
+Sonoko Hirano
+----
+
 I don't quite work right. Fix me up!
 
 * Look for instructions in index.html and results.html
