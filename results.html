@@ -1,37 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>TestMe_lite results!</title>
-	<link rel="stylesheet" href="css/bootstrap.css"/>
-	<!--[if IE 7]>
-	<script>
-		// Attach additional stylesheets and JS for ie.
-		//TODO: json3 not working??
-		document.createStyleSheet('/css/ie7.css');
+  <meta charset="utf-8">
+  <title>TestMe_lite results!</title>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <!--[if IE 7]>
+  <script>
+    // Attach additional stylesheets and JS for ie.
+    //TODO: json3 not working??
+    document.createStyleSheet('/css/ie7.css');
 
-		var json3 = document.createElement('script');
-		json3.type = 'text/javascript';
-		json3.href = '/vendor/json3.js';
-		json3.appendChild(document.getElementsByTagName('head')[0]);
-	</script>
-	<![endif]-->
-	<script src="js/vendor/jquery.min.js"></script>
-	<script src="js/vendor/bootstrap.js"></script>
-
+    var json3 = document.createElement('script');
+    json3.type = 'text/javascript';
+    json3.href = '/vendor/json3.js';
+    json3.appendChild(document.getElementsByTagName('head')[0]);
+  </script>
+  <![endif]-->
+  
+  <!-- pn: I do not have IE (using Mac), so I am unable to fix/test this -->
 </head>
 <body>
 <div class="container">
-	<div class="row">
-		<h1>You made it to the results page!</h1>
-	</div>
-	<div class="well">
-		<p>On this page you will:</p>
-		<ul>
-			<li>Tastefully display the selections the user made .</li>
-			<li>Fix the json3 and css includes for IE7.</li>
-		</ul>
-
-	</div>
+  <div class="row">
+    <h1>You made it to the results page!</h1>
+  </div>
+  <div class="well">
+    <p>You selected the following options:</p>
+    <ul id="resultsList">
+    </ul>
+  </div>
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/vendor/bootstrap.js"></script>
+  <script src="js/results.js"></script>
 </body>
 </html>
