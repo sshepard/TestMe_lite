@@ -1,0 +1,15 @@
+h1 { 
+  color: #900;
+  margin: 20px;
+  weight: bolder;
+}
+
+.form-error {
+  color: #f00;
+  display: none;
+}
+
+.checkbox-all {
+  color: #333;
+  font-weight: normal;
+}
