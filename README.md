@@ -1,7 +1,7 @@
 I don't quite work right. Fix me up!
 
 * Look for instructions in index.html and results.html
-* Fork me or clone me from: https://github.com/sshepard/TestMe_lite
+* Fork me me from: https://github.com/sshepard/TestMe_lite
 
 extra credit:
 * Sort the checkboxes by name.
@@ -24,5 +24,4 @@ When you're done:
  - Push it: git push origin yourName
  - Make a pull request in GitHub at https://github.com/sshepard/TestMe_lite
 
-If you can't because you are against pulls or are all out of forks, then you can hand-write your answers on a dead tree and
-shove them in an envelope (or email) to your technical contact, manager or recruiter person.
+If you can't because you are against pulls or are all out of forks, then email slshepard@gmail.com and we'll work out a solution.
