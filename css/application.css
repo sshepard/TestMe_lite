@@ -1,0 +1,176 @@
+.container {
+	overflow: hidden;
+	font-family: 'Open Sans', sans-serif;
+}
+
+form {
+	position: relative;
+}
+
+form .feedback {
+	position: absolute;
+	right: 2%;
+	bottom: auto;
+	top: 2%;
+	width: 20%;
+	min-width: 140px;
+	left: auto;
+	padding: 10px;
+	background:  rgba(153, 153, 0, 1);
+}
+
+form,
+.results{
+	padding: 20px;
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+	margin-bottom: 50px;	
+	overflow: hidden;
+}
+
+.form-group {
+	overflow: hidden;
+}
+
+h1 { color: darkred }
+h1 { weight: bolder }
+h1 { margin: 20px; display: block; opacity: 80%; }
+h1:hover { opacity:1; }
+.hidden {
+	display: none;
+}
+
+.error-wrapper {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.85);
+    display: none;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;   
+    z-index: 201;
+}
+
+.message {	
+	width: 40%;
+	height: 40%;
+	position: absolute;
+	background: #fff;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 2%;
+	font-size: 20px;
+}
+
+.message .close-x {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	left: auto;
+	top: auto;
+	padding: 5px 10px;
+	color: #fff;
+	width: auto;
+	
+	background: none repeat scroll 0 0 #0099cc;
+    border: 0 none;
+    border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+	font-family: 'Roboto Condensed', sans-serif;
+	
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.message .close-x:hover {
+	color: #fff;
+	background: #0070a3;
+	cursor: pointer;
+}
+
+label.checkbox {
+	padding: 5px 20px 5px 40px;
+	margin: 5px 0 5px 5px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	transition: all .3s ease;
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	
+	float: left;
+	clear: left;
+}
+
+label:hover {
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(153, 153, 0, 1);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(153, 153, 0, 1);
+	box-shadow: 0px 0px 5px 0px rgba(153, 153, 0, 1);
+}
+
+.btn {
+	clear: left;
+	display: block;
+	background: none repeat scroll 0 0 #0099cc;
+    border: 0 none;
+    border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+	font-family: 'Roboto Condensed', sans-serif;
+    padding: 8px 13px;
+	
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+	color: #fff;
+	background: #0070a3;
+}
+
+a.btn {
+	display; block;
+	float: left;
+}
+
+.btn-default {
+	float: left;	
+}
+
+.btn-reset {
+	float: right;
+	clear: none;
+}
+
+.in-IE {
+	display: none;
+}
+
+.results p ,
+.results ul {
+	margin: 1.5em 0;
+}
