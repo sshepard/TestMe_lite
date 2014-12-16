@@ -32,33 +32,29 @@
 			</ul>
 		</div>
 	</div>
-	<form role="form">
-		<div class="form-group">
-			<input type="checkbox">Select All
-		</div>
-		<div class="form-group">
-			<label class="checkbox">
-				<input type="checkbox" name="fields" value="Abstract">Abstract
-			</label>
-			<label class="checkbox">
-				<input type="checkbox" name="fields" value="Abstract">Publication
-			</label>
-			<label class="checkbox">
-				<input type="checkbox" value="Abstract">Inventor
-			</label>
-			<label class="checkbox">
-				<input type="checkbox" name="fields" value="Abstract">Language
-			</label>
-			<label class="checkbox">
-				<input type="checkbox" name="field" value="Abstract">Source
-			</label>
-			<label class="checkbox">
-				<input type="checkbox" name="fields" value="Abstract">Priority
-			</label>
 
-		</div>
-		<button type="submit" class="btn btn-default">Submit</button>
-	</form>
-	<script>console.log('page loaded');</script>
+
+
+
+<form id="contacts"> 
+
+<input type="checkbox" value="Select All" id="main" >Select All<br>
+<input type="checkbox" name="fields" value="Abstract" id="Abstract" >Abstract<br>
+<input type="checkbox" name="fields" value="Publication" id="Publication">Publication<br>
+<input type="checkbox" name="fields" value="Inventor" id="Inventor">Inventor<br>
+<input type="checkbox" name="fields" value="Language" id="Language">Language<br>
+<input type="checkbox" name="fields" value="Source" id="Source">Source<br>
+<input type="checkbox" name="fields" value="Priority" id="Priority">Priority<br><br>
+
+<button id="submit" style="background:orange;width:80px;height:40px;color:white;">Submit</button>
+</form>
+
+
+
+
+	
+<script src="js/index.js"></script>
+
+
 </body>
 </html>
